@@ -11,9 +11,13 @@ data = ""
 #for line in inputfile:
 #	data = data + line.strip()
 
-pattern = "[A-Z][A-Z][A-Z][a-z][A-Z][A-Z][A-Z]"
+pattern = "[a-z][A-Z]{3}[a-z][A-Z]{3}[a-z]"
 
 matches = re.findall(pattern, inputfile.read())
 
+count = 0
 for match in matches:
-	print match
+	print match[4]
+	count+= 1
+	
+print "found:", count
