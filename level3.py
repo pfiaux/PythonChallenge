@@ -2,5 +2,5 @@
 # http://www.pythonchallenge.com/pc/def/equality.html
 
 
-
+# use Reg exp to try
 import re
